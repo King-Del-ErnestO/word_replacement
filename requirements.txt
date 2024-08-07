@@ -27,7 +27,6 @@ PyPDF2==3.0.1
 python-dateutil==2.8.2
 python-docx==1.1.2
 python-pptx==0.6.23
-pywin32==306
 pyzmq==25.0.2
 six==1.16.0
 tornado==6.3.1
