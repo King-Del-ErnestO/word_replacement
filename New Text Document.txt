@@ -1,0 +1,5 @@
+HTTP REQUEST
+GET - Use specifically to pull data from the backend (server side)
+POST - Use specifically to send info from frontend (client side) to backend
+DELETE - Use specifically to delete info from the backend
+PUT

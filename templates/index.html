@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload File</title>
+</head>
+<body>
+    <h1>Enter the words you to replace</h1>
+    <form action="/words" method="post">
+        <span>Keyword:</span><input type="text" name="key" placeholder="Enter keyword">
+        <span>Value:</span><input type="text" name="value" placeholder="Enter value">
+        <br><br>
+        <span>Multiple words: </span><textarea name="multiple" rows="4" cols="50" placeholder="{ 'BombBomb': 'Car', 'client': 'member' }"></textarea>
+        <button type="submit">Submit</button>
+    </form>
+
+    <h1>Upload a Word Document</h1>
+    <h3>.docx and .txt files are highly recommended</h3>
+    <form action="/upload_file" method="post" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <input type="submit" value="Upload">
+    </form>
+
+    {%if text %}
+     <h1>Formatted Word Document</h1>
+        <p>{{text}}</p>
+
+    {%endif %}
+</body>
+</html>
